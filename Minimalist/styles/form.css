@@ -1,0 +1,270 @@
+﻿
+002
+003
+004
+005
+006
+007
+008
+009
+010
+011
+012
+013
+014
+015
+016
+017
+018
+019
+020
+021
+022
+023
+024
+025
+026
+027
+028
+029
+030
+031
+032
+033
+034
+035
+036
+037
+038
+039
+040
+041
+042
+043
+044
+045
+046
+047
+048
+049
+050
+051
+052
+053
+054
+055
+056
+057
+058
+059
+060
+061
+062
+063
+064
+065
+066
+067
+068
+069
+070
+071
+072
+073
+074
+075
+076
+077
+078
+079
+080
+081
+082
+083
+084
+085
+086
+087
+088
+089
+090
+091
+092
+093
+094
+095
+096
+097
+098
+099
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+/* import google font family */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap');
+/* selecting everything */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif, helvetica, Arial;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    /* body background image */
+    background-image: linear-gradient(to bottom, rgba(300, 128, 128, 0.541), rgba(204, 0, 255, 0.637)), url("../assets/images/featured-02.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#contact {
+    background-color: rgba(33, 28, 28, 0.8);
+    padding: 20px;
+    margin: 50px 0;
+    border-radius:20px;
+}
+
+    #contact input, button {
+        font: 400 15px 'Open Sans', sans-serif, helvetica, Arial;
+    }
+
+    #contact h1 {
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        color: blue;
+    }
+
+    #contact h3 {
+        margin: 5px 0px 15px;
+        text-align: center;
+    }
+
+.row {
+    display: flex;
+    width: 100% !important;
+    padding: 20px 0px;
+}
+
+    .row .column {
+        margin: 0px 20px;
+        width: 50%;
+    }
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    width: 100%;
+}
+.textbox {
+    border-radius: 5px;
+    width: 80%;
+    border: none;
+    background-color: #212529;
+    padding: 10px;
+    margin: 5px 0;
+    transition: ease-in-out .3s;
+}
+.textbox:focus{
+    width:100%;
+    border:none;
+}
+
+
+
+
+input[type = "radio"] {
+    width: 10% !important;
+}
+
+#contact .row .radio {
+    border: 1px solid rgb(150, 150, 150);
+    background-color: white;
+    margin: 7px 0 10px;
+    padding: 5px;
+}
+
+#contact .row .idCard {
+    display: flex;
+    height: 45px !important;
+    margin: 5px 0;
+}
+
+    #contact .row .idCard :first-child {
+        width: 80px;
+    }
+
+    #contact .row .idCard :last-child {
+        width: 40px;
+    }
+
+#contact .row #phone {
+    max-width: 100% !important;
+    padding-right: 80px;
+}
+
+
+
+#contact button {
+    outline: none;
+    border: none;
+    background-color: blue;
+    color: white;
+    margin: 0 0 5px 40%;
+    padding: 10px;
+    font-size: 17px;
+    width: 150px;
+}
+
+    #contact button:hover {
+        background-color: rgba(0, 0, 255, 0.8);
+    }
+
+
+
+/* mobile responsive mode */
+@media screen and (max-width: 580px) {
+    .row {
+        flex-direction: column;
+    }
+
+        .row .column {
+            width: 90% !important;
+        }
+
+    #contact .row #phone {
+        padding-right: 180px;
+    }
+}
